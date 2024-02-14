@@ -1,0 +1,15 @@
+create table if not exists schedule_job_maintenance(
+job_id integer not null,
+down_time_applicable varchar(255) null,
+down_time_notification_mode varchar(255) null,
+from_email varchar(255) null,
+to_email varchar(255) null,
+cc varchar(255) null,
+bcc varchar(255) null,
+cc_as_bcc char null,
+time_zone varchar(255) null,
+team_contact varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint schedule_job_maintenance_pk primary key(job_id));
